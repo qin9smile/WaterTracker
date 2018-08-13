@@ -12,5 +12,6 @@ class PlantsViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    print("plants")
   }
 }
