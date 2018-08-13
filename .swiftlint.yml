@@ -1,0 +1,67 @@
+# 排除掉的规则
+disabled_rules:
+- control_statement
+- identifier_name
+- todo
+# 可选的规则
+opt_in_rules:
+- empty_count
+- empty_parameters
+
+
+colon: error
+comma: error
+closing_brace: error
+opening_brace: error
+return_arrow_whitespace: error
+statement_position: error
+trailing_semicolon: error
+empty_count: error
+
+trailing_semicolon: error
+statement_position: error
+explicit_init: error
+shorthand_operator: error
+
+force_cast: warning
+force_try:
+severity: warning
+
+line_length: 140
+function_parameter_count:
+- 6 # warning
+- 8 # error
+type_body_length:
+- 300 # warning
+- 400 # error
+# 复杂的方法名
+cyclomatic_complexity:
+- 15 # warning
+- 20 # error
+# 方法体的长度
+function_body_length:
+- 60 # warning
+- 100 # error
+file_length:
+- 600 # warning
+- 1000 # error
+
+type_name:
+min_length: 4 # 只是警告
+max_length: # 警告和错误
+warning: 30
+error: 35
+excluded: iPhone # 排除某个名字
+identifier_name:
+min_length: # 只有最小长度
+error: 4 # 只有错误
+excluded: # 排除某些名字
+- id
+- URL
+- GlobalAPIKey
+
+included: # paths to include during linting. `--path` is ignored if present.
+- WaterTracker
+
+reporter: "xcode" # 报告类型 (xcode, json, csv, checkstyle, junit, html, emoji)
+
